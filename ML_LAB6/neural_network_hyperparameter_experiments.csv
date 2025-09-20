@@ -1,0 +1,6 @@
+Experiment,Learning Rate,Batch Size,Number of Epochs,Optimizer,Activation Function,Training Accuracy,Validation Accuracy,Test Accuracy,Training Loss,Validation Loss,Test Loss,Observations
+Baseline (Part A),0.001,Full Batch,500,Gradient Descent,ReLU,57.25%,57.25%,57.25%,0.432816,0.426525,0.426525,Baseline model from Part A - stable convergence
+Exp 1: Higher LR,0.01,Full Batch,300,Gradient Descent,ReLU,86.64%,86.64%,86.64%,0.135157,0.133268,0.133268,Higher LR: Faster convergence but may overshoot optimal solution
+Exp 2: Lower LR,0.0001,Full Batch,800,Gradient Descent,ReLU,7.06%,7.06%,7.06%,0.930592,0.927256,0.927256,"Lower LR: Slower but more stable convergence, may need more epochs"
+Exp 3: More Epochs,0.001,Full Batch,1000,Gradient Descent,ReLU,76.68%,76.68%,76.68%,0.236381,0.232662,0.232662,Extended training: Thorough optimization with patience
+Exp 4: Sigmoid Activation,0.001,Full Batch,500,Gradient Descent,Sigmoid,0.00%,0.00%,0.00%,1.019185,1.016965,1.016965,Sigmoid Activation: Slower to converge due to vanishing gradients
